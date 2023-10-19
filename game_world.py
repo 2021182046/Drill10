@@ -1,7 +1,7 @@
 #게임월드 모듈
 
 #게임월드 표현
-world = [ [], [] ]
+world = [ [], [], [] ]
 
 #월드에 객체 담기
 def add_object(o, depth=0):
@@ -18,6 +18,7 @@ def render():
     for layer in world:
         for o in layer:
             o.draw()
+
 
 #월드 객체 삭제
 def remove_object(o):
